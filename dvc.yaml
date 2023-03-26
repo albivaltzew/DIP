@@ -4,10 +4,8 @@ stages:
       --weights yolov5n.pt
     metrics:
     - time_info.json
-<<<<<<< HEAD
+
   detect:
     cmd: python detect_new.py --weights  best.pt --source /content/drive/MyDrive/images
     metrics:
     - detect_info.json
-=======
->>>>>>> b1eea602ed1b34d80d54e9070b89ef1af9748f9d
