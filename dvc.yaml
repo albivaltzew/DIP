@@ -1,0 +1,6 @@
+stages:
+  train:
+    cmd: python train_time.py --img 640 --batch 16 --epochs 2 --data coco128.yaml
+      --weights yolov5n.pt
+    metrics:
+    - time_info.json
