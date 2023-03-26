@@ -1,0 +1,8 @@
+schema: '2.0'
+stages:
+  detect:
+    cmd: python detect_new.py --weights  best.pt --source /content/drive/MyDrive/images
+    outs:
+    - path: detect_info.json
+      md5: 6cbcd3f1d83a07bdc59eda1a7f7e693a
+      size: 112
