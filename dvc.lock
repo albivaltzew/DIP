@@ -11,5 +11,5 @@ stages:
     cmd: python detect_new.py --weights  best.pt --source /content/drive/MyDrive/images
     outs:
     - path: detect_info.json
-      md5: 7017b60f716e3ca377daf2ae4ce83ef7
+      md5: 8d336bba0755c3330dcfec4c050155e4
       size: 112
