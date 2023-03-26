@@ -5,5 +5,11 @@ stages:
       --weights yolov5n.pt
     outs:
     - path: time_info.json
-      md5: 43190d048bf21a6432e2121e09104866
-      size: 203
+      md5: 83d3dea97c4265cd2d2dfd870c03d642
+      size: 200
+  detect:
+    cmd: python detect_new.py --weights  best.pt --source /content/drive/MyDrive/images
+    outs:
+    - path: detect_info.json
+      md5: 7017b60f716e3ca377daf2ae4ce83ef7
+      size: 112
