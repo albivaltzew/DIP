@@ -1,8 +1,18 @@
 schema: '2.0'
 stages:
+<<<<<<< HEAD
   detect:
     cmd: python detect_new.py --weights  best.pt --source /content/drive/MyDrive/images
     outs:
     - path: detect_info.json
       md5: 6cbcd3f1d83a07bdc59eda1a7f7e693a
       size: 112
+=======
+  train:
+    cmd: python train_time.py --img 640 --batch 16 --epochs 2 --data coco128.yaml
+      --weights yolov5n.pt
+    outs:
+    - path: time_info.json
+      md5: 9dbe879f00b1410c4563fb5f7753cb70
+      size: 201
+>>>>>>> b1eea602ed1b34d80d54e9070b89ef1af9748f9d
