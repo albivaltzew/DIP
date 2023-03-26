@@ -1,0 +1,9 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train_time.py --img 640 --batch 16 --epochs 2 --data coco128.yaml
+      --weights yolov5n.pt
+    outs:
+    - path: time_info.json
+      md5: 83d3dea97c4265cd2d2dfd870c03d642
+      size: 200
