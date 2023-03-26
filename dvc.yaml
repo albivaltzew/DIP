@@ -6,6 +6,6 @@ stages:
     - time_info.json
 
   detect:
-    cmd: python detect_new.py --weights  best.pt --source /content/drive/MyDrive/images
+    cmd: python detect_new.py --weights  best.onnx --source /content/drive/MyDrive/images
     metrics:
     - detect_info.json

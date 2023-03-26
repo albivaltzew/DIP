@@ -1,8 +1,8 @@
 schema: '2.0'
 stages:
   detect:
-    cmd: python detect_new.py --weights  best.pt --source /content/drive/MyDrive/images
+    cmd: python detect_new.py --weights  best.onnx --source /content/drive/MyDrive/images
     outs:
     - path: detect_info.json
-      md5: 24943e17b05a7474b2d9665a674113d2
+      md5: c5447060304cbb33ad19a43ab0bb6464
       size: 111
